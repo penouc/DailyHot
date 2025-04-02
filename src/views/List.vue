@@ -143,7 +143,7 @@ const listData = ref(null);
 // 获取热榜数据
 const getHotListsData = async (name, isNew = false) => {
   listData.value = null;
-  const item = store.newsArr.find((item) => item.name == name)
+  const item = store.newsArr.find((item) => item.name == name);
   getHotLists(item.name, isNew, item.params).then((res) => {
     console.log(res);
     if (res.code === 200) {
@@ -167,6 +167,7 @@ const jumpLink = (data) => {
 
 // 切换类别
 const changeType = (type) => {
+  listType.value = type;
   router.push({
     path: "/list",
     query: {
@@ -174,6 +175,7 @@ const changeType = (type) => {
       page: 1,
     },
   });
+  getHotListsData(type);
 };
 
 // 实时改变更新时间
