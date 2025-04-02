@@ -8,6 +8,10 @@
       <n-back-top :visibility-height="2" @update:show="backTopChange" />
       <Header :class="headerShow ? 'show' : null" />
       <main>
+        <nav>
+          <router-link to="/">首页</router-link> |
+          <router-link to="/about">关于我们</router-link>
+        </nav>
         <router-view v-slot="{ Component }">
           <keep-alive>
             <transition name="scale" mode="out-in">
