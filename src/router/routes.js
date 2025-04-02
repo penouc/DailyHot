@@ -2,29 +2,29 @@ const routes = [
   // 首页
   {
     path: "/",
-    name: "home",
+    name: "Home",
     meta: {
       title: "首页",
     },
-    component: () => import("@/views/Home.vue"),
+    component: () => import("../views/Home.vue"),
   },
   // 新闻列表
   {
     path: "/list",
-    name: "list",
+    name: "List",
     meta: {
       title: "新闻列表",
     },
-    component: () => import("@/views/List.vue"),
+    component: () => import("../views/List.vue"),
   },
   // 设置页
   {
     path: "/setting",
-    name: "setting",
+    name: "Setting",
     meta: {
       title: "全局设置",
     },
-    component: () => import("@/views/Setting.vue"),
+    component: () => import("../views/Setting.vue"),
   },
   // 测试页面
   {
@@ -33,7 +33,7 @@ const routes = [
     meta: {
       title: "test",
     },
-    component: () => import("@/views/Test.vue"),
+    component: () => import("../views/Test.vue"),
   },
   // 403
   {
@@ -42,7 +42,7 @@ const routes = [
     meta: {
       title: "403",
     },
-    component: () => import("@/views/403.vue"),
+    component: () => import("../views/403.vue"),
   },
   // 404
   {
@@ -51,7 +51,7 @@ const routes = [
     meta: {
       title: "404",
     },
-    component: () => import("@/views/404.vue"),
+    component: () => import("../views/404.vue"),
   },
   // 500
   {
@@ -60,7 +60,7 @@ const routes = [
     meta: {
       title: "500",
     },
-    component: () => import("@/views/500.vue"),
+    component: () => import("../views/500.vue"),
   },
   {
     path: "/:pathMatch(.*)",

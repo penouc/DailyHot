@@ -9,13 +9,6 @@
         @click="jumpLink(packageJson.github)"
       />
     </div>
-    <n-text
-      v-if="icp"
-      :depth="3"
-      class="icp"
-      v-html="icp"
-      @click="jumpLink('https://beian.miit.gov.cn/')"
-    />
   </footer>
 </template>
 
