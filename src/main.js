@@ -7,6 +7,7 @@ import router from "@/router";
 
 // 全局样式
 import "@/style/global.scss";
+// 检查这个全局样式文件
 
 const app = createApp(App);
 

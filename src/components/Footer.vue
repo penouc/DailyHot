@@ -1,13 +1,9 @@
 <template>
   <footer>
     <div class="copyright">
-      <n-text class="description" v-html="packageJson.description" />
-      <n-text
-        class="author"
-        :depth="3"
-        v-html="packageJson.author"
-        @click="jumpLink(packageJson.github)"
-      />
+      <span>Copyright © 2024 ResouHub</span>
+      <n-divider vertical />
+      <router-link to="/about" class="about-link">关于我们</router-link>
     </div>
   </footer>
 </template>
@@ -33,28 +29,34 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   .copyright {
     margin-bottom: 4px;
-    .description {
-      &::after {
-        content: "@ Copyright By";
-        margin: 0 6px;
-      }
-    }
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-color3);
+    font-size: 14px;
   }
-  .author {
-    cursor: pointer;
-    transition: all 0.3s;
+
+  .about-link {
+    color: var(--text-color3);
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 14px;
+
     &:hover {
-      color: var(--n-code-text-color);
+      color: var(--primary-color);
     }
   }
+
   .icp {
     font-size: 13px;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: color 0.3s;
+
     &:hover {
-      color: var(--n-code-text-color);
+      color: var(--primary-color);
     }
   }
 }

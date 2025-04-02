@@ -111,3 +111,16 @@ onMounted(() => {
   transform: scale(0.98);
 }
 </style>
+
+<style lang="scss">
+// 添加全局样式
+html,
+body {
+  user-select: text !important;
+}
+
+// 如果需要某些区域不可选择，可以单独设置
+.no-select {
+  user-select: none;
+}
+</style>

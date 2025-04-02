@@ -26,6 +26,15 @@ const routes = [
     },
     component: () => import("../views/Setting.vue"),
   },
+  // 关于我们
+  {
+    path: "/about",
+    name: "About",
+    meta: {
+      title: "关于我们",
+    },
+    component: () => import("../views/About.vue"),
+  },
   // 测试页面
   {
     path: "/test",

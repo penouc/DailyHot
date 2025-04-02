@@ -31,34 +31,44 @@ onMounted(() => {
 });
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .about-container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  user-select: text; /* 允许文本选择 */
 }
 
 .about-content {
   line-height: 1.6;
+  user-select: text; /* 允许文本选择 */
 }
 
 h1 {
   font-size: 2em;
   color: #333;
   margin-bottom: 30px;
+  user-select: text; /* 允许文本选择 */
 }
 
 h2 {
   font-size: 1.5em;
   color: #444;
   margin: 25px 0 15px;
+  user-select: text; /* 允许文本选择 */
 }
 
 ul {
   padding-left: 20px;
+  user-select: text; /* 允许文本选择 */
 }
 
 li {
   margin: 10px 0;
+  user-select: text; /* 允许文本选择 */
+}
+
+p {
+  user-select: text; /* 允许文本选择 */
 }
 </style>
