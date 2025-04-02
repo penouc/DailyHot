@@ -27,7 +27,7 @@
 import { onMounted } from "vue";
 
 onMounted(() => {
-  document.title = "关于我们 - ResouHub热搜榜";
+  document.title = "关于我们-ResouHub热搜榜";
 });
 </script>
 
